@@ -11,7 +11,7 @@ class HeaderComponent extends Component {
                     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                         <div>
                             {/* <a href="https://www.google.com/" className="navbar-brand">Todo's Management</a> */}
-                            <span className="navbar-brand">Todo's Management</span>
+                            <span className="navbar-brand">Naveen's Todo Management app</span>
                         </div>
                         <ul className="navbar-nav">
                             {isUserLoggedIn && <li className="nav-link"><Link to="/welcome/user">Home</Link></li>}

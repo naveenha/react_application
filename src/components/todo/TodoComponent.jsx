@@ -53,7 +53,7 @@ class TodoComponent extends Component {
                                     <Field className="form-control" type="date" name="targetDate"></Field>
                                 </fieldset>
                                 <fieldset className="form-group">
-                                    <label>Is Done?</label>
+                                    <label>Is it Done?</label>
                                     <Field className="form-control" type="boolean" name="isDone"></Field>
                                 </fieldset>
                                 <button className="btn btn-success" type="submit">Save</button>
