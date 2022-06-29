@@ -9,9 +9,9 @@ class ListTodosComponent extends Component {
         super(props)
         this.state = {
             todos: [],
-            // { id: 1, description: 'Learn React', done: false, targetDate: new Date() },
-            // { id: 2, description: 'Learn Spring Boot', done: false, targetDate: new Date() },
-            // { id: 3, description: 'Learn Angular', done: false, targetDate: new Date() }
+            // { id: 1, description: 'Learn React', isDone: false, targetDate: new Date() },
+            // { id: 2, description: 'Learn Spring Boot', isDone: false, targetDate: new Date() },
+            // { id: 3, description: 'Learn Angular', isDone: false, targetDate: new Date() }
             message: null
         }
         this.deleteClicked = this.deleteClicked.bind(this)
@@ -61,7 +61,7 @@ class ListTodosComponent extends Component {
                             this.state.todos.map(todo =>
                                 <tr key={todo.id}>
                                     <td>{todo.description}</td>
-                                    <td>{todo.done.toString()}</td>
+                                    <td>{todo.isDone.toString()}</td>
                                     <td>{moment(todo.targetDate).format('YYYY-MM-DD')}</td>
                                     <td><button className="btn btn-success" onClick={() => this.updateClicked(todo.id)}>Update</button></td>
                                     <td><button className="btn btn-warning" onClick={() => this.deleteClicked(todo.id)}>Delete</button></td>
